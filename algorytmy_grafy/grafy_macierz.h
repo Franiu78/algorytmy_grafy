@@ -3,6 +3,7 @@
 
 #include <vector>
 using namespace std;
+
 class graf_macierz {
 private:
     int V;
@@ -17,6 +18,10 @@ public:
     void DFS(int start);
     void BFS(int start);
     void LosowyGraf(int gestosc, int minValue = 1, int maxValue = 10);
+    void Dijkstra(int start);
+    bool BellmanFord(int start);
+
+
     
 };
 

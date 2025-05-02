@@ -17,7 +17,7 @@ struct AdjNode {
 class graf_lista {
 private:
     int V;
-    vector<AdjNode*> lista; // wektror wskaŸników na dane listy s¹siedztwa (ka¿da wierzcho³ek ma w³asn¹ listê)
+    vector<AdjNode*> lista; // wektror wskaï¿½nikï¿½w na dane listy sï¿½siedztwa (kaï¿½da wierzchoï¿½ek ma wï¿½asnï¿½ listï¿½)
 
 public:
     graf_lista(int wierzcholki);
@@ -28,6 +28,10 @@ public:
     void DFS(int start);
     void BFS(int start);
     void LosowyGraf(int gestosc, int minValue = 1, int maxValue = 10);
+    void Dijkstra(int start);
+    bool BellmanFord(int start);
+
+
 
 };
 

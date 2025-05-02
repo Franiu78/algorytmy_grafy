@@ -11,20 +11,24 @@ using namespace std;
 
 int main() 
 {
-    graf_macierz g(500);
-    graf_lista h(500);
+    graf_macierz g(10);
+    graf_lista h(10);
 
-    g.LosowyGraf(100);
+g.dodajKrawedz(0, 1, 2);
+g.dodajKrawedz(0, 2, 5);
+g.dodajKrawedz(1, 3, 1);
+g.dodajKrawedz(2, 3, 2);
+g.dodajKrawedz(3, 4, 3);
 
-    g.wypisz();
-    h.LosowyGraf(100);
-    
+g.Dijkstra(0);
+g.BellmanFord(0);
 
-    h.wypisz();
+h.dodajKrawedz(0, 1, 2);
+h.dodajKrawedz(0, 2, 5);
+h.dodajKrawedz(1, 3, 1);
+h.dodajKrawedz(2, 3, 2);
+h.dodajKrawedz(3, 4, 3);
 
-    g.DFS(0);
-    h.DFS(0);
-    g.BFS(0);
-    h.BFS(0);
-    return 0;
+h.Dijkstra(0);
+h.BellmanFord(0);
 }

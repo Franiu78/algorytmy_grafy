@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Kompiluj projekt grafy",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "algorytmy_grafy/main.cpp",
+                "algorytmy_grafy/grafy_macierz.cpp",
+                "algorytmy_grafy/grafy_lista.cpp",
+                "-o",
+                "algorytmy_grafy/grafy.exe",
+                "-std=c++17"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

@@ -9,6 +9,7 @@
                 "algorytmy_grafy/main.cpp",
                 "algorytmy_grafy/grafy_macierz.cpp",
                 "algorytmy_grafy/grafy_lista.cpp",
+                "algorytmy_grafy/test.cpp",
                 "-o",
                 "algorytmy_grafy/grafy.exe",
                 "-std=c++17"
